@@ -1,26 +1,26 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+    requires = ["setuptools", "wheel"]
+    build-backend = "setuptools.build_meta"
+
 [project]
-name = "veles-vh"
-version = "0.1.0"
-authors = [
-  { name="Vadym Hutei", email="hutei@live.com" },
-]
-description = "Miniframework for my projects"
-readme = "README.md"
-requires-python = ">=3.11"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
-]
-license = "MIT"
-dependencies = [
-    "PyMySQL==1.*"
-]
-[project.urls]
-Homepage = "https://github.com/VadymHutei/veles"
-Issues = "https://github.com/VadymHutei/veles/issues"
+    name = "veles-vh"
+    version = "0.1.1"
+    description = "Miniframework for my projects"
+    readme = "README.md"
+    requires-python = ">=3.11"
+    license = { text = "MIT" }
+    authors = [
+        { name = "Vadym Hutei", email = "hutei@live.com" },
+    ]
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ]
+    urls = { Homepage = "https://github.com/VadymHutei/veles", Issues = "https://github.com/VadymHutei/veles/issues" }
+    dependencies = [
+        "PyMySQL==1.*"
+    ]
+
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["veles"]
+    where = ["."]
+    include = ["veles"]
