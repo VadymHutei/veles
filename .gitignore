@@ -2,4 +2,4 @@
 /env
 /temp
 /dist
-/*.egg-info
+*.egg-info
