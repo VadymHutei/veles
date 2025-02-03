@@ -15,8 +15,12 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = "MIT"
-license-files = ["LICEN[CS]E*"]
-
+dependencies = [
+    "PyMySQL==1.*"
+]
 [project.urls]
 Homepage = "https://github.com/VadymHutei/veles"
 Issues = "https://github.com/VadymHutei/veles/issues"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["veles"]
